@@ -98,7 +98,7 @@ namespace Calculator
             double result = 0; 
             for ( int i = 0; i < nums.Length; i++)
             {
-                result += nums[1];
+                result += nums[i];
             }
             return result;
         }
@@ -115,7 +115,7 @@ namespace Calculator
             double result = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                result -= nums[1];
+                result -= nums[i];
             }
             return result;
         }
