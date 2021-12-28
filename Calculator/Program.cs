@@ -112,10 +112,13 @@ namespace Calculator
         //overloading Subtraction method with parsing an array as parameter
         public static double Subtraction(double[] nums)
         {
-            double result = 0;
-            for (int i = 0; i < nums.Length; i++)
+            double result = nums[0];
+            
+            for (int i = 1 ; i < nums.Length; i++)
             {
+                Console.WriteLine($"{result} - {nums[i]} = {result - nums[i]}");
                 result -= nums[i];
+                Console.WriteLine("Actual"  + result);
             }
             return result;
         }
