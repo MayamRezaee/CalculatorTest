@@ -15,6 +15,18 @@ namespace CalculatorTest
             double result = CalculatorProgram.Addition(num1, num2);
             Assert.Equal(expectedResult, result);
         }
+         [Fact]
+        public void AddArrayTest()
+        {
+            double num1 = 5;
+            double num2 = 7;
+            double expectedResult = 12;
+            double[] nums = new[] { num1, num2 };
+            double result = CalculatorProgram.Addition(nums);
+            Console.Write(result);
+
+            Assert.Equal(expectedResult, result);
+        }
         [Fact]
 
         public void TestSubtraction()
@@ -25,6 +37,18 @@ namespace CalculatorTest
             double result = CalculatorProgram.Subtraction(num1, num2);
             Assert.Equal(expectedResult, result);
         }
+        public void SubArrayTest()
+        {
+            double num1 = 2;
+            double num2 = 1;
+            double expectedResult = 1;
+            double[] nums = new[] { num1, num2 };
+            double result = CalculatorProgram.Subtraction(nums);
+            Write(result);
+
+            Assert.Equal(expectedResult, result);
+        }
+         
         [Fact]
         public void TestMultiplication()
         {
